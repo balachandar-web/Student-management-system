@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management System</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            background-color: #f8f9fa;
+            /* padding-top: 50px; */
+        }
+
+        .jumbotron {
+            background-color: #007bff;
+            color: #fff;
+            padding: 100px 30px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            font-weight: bold;
+        }
+
+        p {
+            font-size: 1.5rem;
+        }
+        .navbar{
+            margin-top: 0%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    {% include 'std/navbar.html' %}
+    <!-- Jumbotron -->
+    <div class="jumbotron">
+        <div class="container">
+            <h1 class="display-3">Welcome to Student Management System</h1>
+            <p class="lead">Manage your students efficiently with our easy-to-use system.</p>
+            <hr class="my-4">
+            <p>Track students records!</p>
+            <a class="btn btn-primary btn-lg bg-dark" href="/std/home/" role="button">Get Started</a>
+        </div>
+        <p id="about"></p>
+    </div>
+
+
+    <section class="my-5">
+        <div class="container">
+          <h2>About Us</h2>
+          <!-- <p class="lead">Our Student Management System (SMS) is designed to streamline the process of managing student records, attendance, grades, and more.</p> -->
+          <p class="lead">Our Student Management System (SMS) is designed to streamline the process of managing student records. It offers a comprehensive solution for educational institutions to efficiently handle student enrollment.</p>
+          <p class="lead">With our user-friendly interface and robust features, administrators, teachers, and staff can easily access and update student information, ensuring accuracy and efficiency in administrative processes.</p>
+          <p class="lead">Whether you are a small school or a large university, our SMS can be tailored to meet your specific needs and scale with your institution's growth. Say goodbye to cumbersome paperwork and manual data entry, and embrace the future of student management with our innovative solution.</p>
+                
+        </div>
+      </section>
+      
+      <!-- Features Section -->
+      <section class="my-5">
+        <div class="container">
+          <h2>Features</h2>
+          <ul>
+            <li>Easy to use interface</li>
+            <li>Secure data handling</li>
+            <!-- <li>Real-time updates and notifications</li>
+            <li>Comprehensive reporting tools</li> -->
+          </ul>
+        </div>
+      </section>
+      
+      <!-- Contact Section -->
+      <section class="my-5">
+        <div class="container">
+          <h2>Contact Us</h2>
+          <p>Have questions? Reach out to our support team for assistance.</p>
+          <!-- Contact form or contact details -->
+        </div>
+      </section>
+      
+      <!-- Footer -->
+      <footer class="text-center py-4 bg-dark">
+        <p class="text-white">© 2024 Student Management System</p>
+      </footer>
+
+    <!-- Bootstrap JS, jQuery, and Popper.js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
